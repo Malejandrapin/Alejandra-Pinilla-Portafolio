@@ -1,0 +1,219 @@
+:root {
+    --background-oscuro: #22364F;
+    --navbar: #2b4463;
+    --azul-primario: #6fb1e4;
+    --rosado-btn-cv: #bc2a6a;
+    --blanco: #ffffff;
+    --parrafo: #cbd5e1;
+    --azul-secuendario: #21ADE4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-oscuro);
+    color: var(--blanco)
+}
+
+/* Estilos para el Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    background-color: var(--navbar);
+    position: fixed;
+    /* No se mueve al hacer scroll */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Se ajusta la imagen que coloque como logo  */
+#logoAlejandra {
+    height: 80px;
+    width: auto;
+}
+
+#logoAlejandra:hover {
+    transform: scale(1.25);
+    /* Efecto visual al pasar el mouse */
+}
+
+.links-nav {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    /* define el tamaño del espacio entre filas y entre columnas */
+}
+
+.links-nav a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* Controla el espacio entre cada letra en un element dado o bloque de texto */
+}
+
+.links-nav a:hover {
+    color: var(--rosado-btn-cv);
+}
+
+/* Estilo para el boton de cv */
+#btn-cv {
+    background-color: var(--rosado-btn-cv);
+    color: var(--blanco);
+    cursor: pointer;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+#btn-cv:hover{
+color: var(--rosado-btn-cv);
+background-color: var(--parrafo);
+}
+
+/* seccion de inicio  */
+.inicio-presentacion {
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.contenedor-foto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.imagen-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circulo-brillo {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border: 2.5px solid var(--azul-primario);
+    box-shadow: 0 0 40px var(--azul-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.circulo-brillo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-contenido h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.contenedor-contenido .nombreAle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    margin: 5px 0;
+}
+
+.contenedor-contenido .nombreAle span {
+    color: var(--azul-primario);
+}
+
+.contenedor-contenido .rolAle {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--azul-secuendario);
+}
+
+.contenedor-contenido #descripcion {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--parrafo);
+    font-size: 20px;
+}
+
+.iconos-redes {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.iconos-redes a {
+    font-size: 22px;
+    border: 2px solid var(--azul-secuendario);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.iconos-redes a:hover {
+    border: var(--azul-primario);
+    box-shadow: 0 0 5px var(--azul-primario);
+}
+
+.botones-contenido {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-verProyectos {
+    background-color: var(--azul-secuendario);
+    color: var(--background-oscuro);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.btn-contactame {
+    background: transparent;
+    color: var(--azul-primario);
+    padding: 12px 30px;
+    border: 2px solid var(--azul-primario);
+    border-radius: 25px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.btn-verProyectos:hover, .btn-contactame:hover{
+ transform: translateY(-5px);
+}
