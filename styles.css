@@ -1,5 +1,5 @@
 :root {
-    --background-oscuro: #22364F;
+    --background-oscuro: #1d2f44;
     --navbar: #2b4463;
     --azul-primario: #6fb1e4;
     --rosado-btn-cv: #bc2a6a;
@@ -82,9 +82,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
-#btn-cv:hover{
-color: var(--rosado-btn-cv);
-background-color: var(--parrafo);
+
+#btn-cv:hover {
+    color: var(--rosado-btn-cv);
+    background-color: var(--parrafo);
 }
 
 /* seccion de inicio  */
@@ -96,6 +97,9 @@ background-color: var(--parrafo);
     padding-top: 120px;
     padding-left: 5%;
     padding-right: 5%;
+    border-bottom: 0.1px solid var(--azul-primario);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .contenedor-foto {
@@ -214,6 +218,82 @@ background-color: var(--parrafo);
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
-.btn-verProyectos:hover, .btn-contactame:hover{
- transform: translateY(-5px);
+
+.btn-verProyectos:hover {
+    background-color: var(--background-oscuro);
+    color: var(--azul-secuendario);
+    border: 2px solid var(--azul-secuendario);
+    border-radius: 25px;
+}
+
+.btn-contactame:hover {
+    color: var(--background-oscuro);
+    background-color: var(--azul-primario);
+}
+
+.seccion-educacion {
+    padding: 80px 5%;
+    background-color: var(--background-oscuro);
+      border-bottom: 0.1px solid var(--azul-primario);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.titulo-seccion{
+    color: var(--azul-secuendario);
+    padding-bottom: 10px;
+}
+/* grid de 2 columnas */
+.grid-educacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.tarjeta-educacion {
+    background-color: var(--background-oscuro);
+    border: 1px solid var(--azul-primario);
+    padding: 40px 30px;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 1px 5px 1px var(--azul-primario);
+}
+
+.tag-educacion {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: transparent;
+    color: var(--azul-secuendario);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight:900;
+    letter-spacing: 1px;
+    border: 1.5px solid var(--azul-primario);
+}
+.año-educacion{
+     font-family: "Lora", serif;
+      font-size: 40px;
+    color: var(--parrafo);
+    margin-bottom: -20px;
+    margin-left: -5px;
+    font-style: italic;
+}
+.tarjeta-educacion h3{
+ font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: var(--azul-primario);
+    margin-bottom: 10px;
+    margin: 12px 0 0 0;
+}
+.tarjeta-educacion p{
+      font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--blanco);
+    line-height: 1.5;
 }
