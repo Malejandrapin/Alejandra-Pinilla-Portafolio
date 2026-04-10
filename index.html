@@ -19,7 +19,7 @@
             <li><a href="#home">INICIO </a> </li>
             <li><a href="#secEducacion">EDUCACIÓN </a> </li>
             <li><a href="#experience">EXPERIENCIA </a> </li>
-            <li><a href="#proyects">PROYECTOS </a> </li>
+            <li><a href="#proyectos">PROYECTOS </a> </li>
             <li><a href="#habilities">HABILIDADES </a> </li>
             <li><a href="#aboutme">SOBRE MI </a> </li>
         </ul>
@@ -28,6 +28,7 @@
             <button id="btn-cv">Descargar CV <i class="fa-solid fa-download"></i> </button>
         </a>
     </nav>
+    <!-- seccion de inicio -->
     <section id="home" class="inicio-presentacion">
         <div class="contenedor-foto">
             <div class="imagen-perfil">
@@ -50,12 +51,13 @@
                 </div>
                 <div class="botones-contenido">
                     <button class="btn-verProyectos">Ver proyectos</button>
-                    <button class="btn-contactame">Contáctame</button>
+                     <a class="email" href="mailto:dismajus@gmail.com">Contáctame</a>
 
                 </div>
 
             </div>
     </section>
+    <!-- seccion de formacion -->
     <section id="secEducacion" class="seccion-educacion">
         <div class="contenedor-educacion">
             <h2 class="titulo-seccion" >  FORMACIÓN ACADÉMICA</h2>
@@ -93,12 +95,94 @@
 
         </div>
     </section>
+<!-- seccion experiencia -->
 
+<section class="experiencia seccion" id="experiencia">
+    <h2 class="titulo-seccion">Experiencia</h2>
 
-    <section>
-        <h2>EXPERIENCIA</h2>
-        
-    </section>
+    <div class="contenedor-experiencia">
+        <div class="item-experiencia">
+            <h3 class="cargo">Monitora Académica (Bootcamp De Talento Tech Mintic)</h3>
+            <span class="empresa">Tecnalia Colombia | 2024</span>
+            <p class="descripcion">
+               Incrementé la participación estudiantil en un 30%, mediante soporte técnico oportuno, seguimiento personalizado y comunicación efectiva entre docentes, mentores y alumnos.
+            </p>
+        </div>
+
+        <div class="item-experiencia">
+            <h3 class="cargo">Practicante Universitaria - Analista de desarrollo de tecnología</h3>
+            <span class="empresa">Seguros Sura Colombia | 2023 - 2024</span>
+            <p class="descripcion">
+             Reduje en un 60% el ingreso de incidencias en cotizaciones de viajes mediante análisis de causa raíz y documentación de mejoras funcionales y técnicas.
+
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section class="proyectos seccion" id="proyectos">
+    <h2 class="titulo-seccion">Proyectos</h2>
+
+    <div class="contenedor-proyectos">
+        <div class="tarjeta-proyecto">
+            <h3>Portafolio Web</h3>
+            <p>Diseño y desarrollo de portafolio personal .</p>
+            <a href="https://malejandrapin.github.io/Alejandra-Pinilla-Portafolio/" class="boton-proyecto">Ver proyecto</a>
+        </div>
+
+        <div class="tarjeta-proyecto">
+            <h3>To Do List</h3>
+            <p>Aplicación de gestión de tareas donde el usuario puede agregar tareas con texto y categoria</p>
+            <a href="https://malejandrapin.github.io/task-manager-Maira-Pinilla/" class="boton-proyecto">Ver proyecto</a>
+        </div>
+    </div>
+</section>
+
+<!-- HABILIDADES -->
+<section class="habilidades seccion" id="habilidades">
+    <h2 class="titulo-seccion">Habilidades</h2>
+
+    <div class="contenedor-habilidades">
+        <div class="grupo-habilidades">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="grupo-habilidades">
+            <h3>Herramientas</h3>
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+            </ul>
+        </div>
+
+        <div class="grupo-habilidades">
+            <h3>Habilidades Blandas</h3>
+            <ul>
+                <li>Trabajo en equipo</li>
+                <li>Comunicación</li>
+                <li>Resolución de problemas</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE MI -->
+<section class="sobre-mi seccion" id="sobre-mi">
+    <h2 class="titulo-seccion">Sobre mí</h2>
+
+    <p class="texto-sobre-mi">
+        Soy desarrolladora en formación apasionada por el desarrollo web.
+        Me gusta crear interfaces modernas, funcionales y centradas en el usuario.
+        Estoy en constante aprendizaje y busco crecer profesionalmente en el área tecnológica.
+    </p>
+</section>
 </body>
 
 </html>

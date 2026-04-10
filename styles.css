@@ -208,13 +208,14 @@ body {
     cursor: pointer;
 }
 
-.btn-contactame {
+.email {
     background: transparent;
     color: var(--azul-primario);
     padding: 12px 30px;
     border: 2px solid var(--azul-primario);
     border-radius: 25px;
     font-weight: 700;
+    text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
@@ -226,11 +227,11 @@ body {
     border-radius: 25px;
 }
 
-.btn-contactame:hover {
+.email:hover {
     color: var(--background-oscuro);
     background-color: var(--azul-primario);
 }
-
+/* seccion de educacion  */
 .seccion-educacion {
     padding: 80px 5%;
     background-color: var(--background-oscuro);
@@ -296,4 +297,103 @@ body {
     font-size: 16px;
     color: var(--blanco);
     line-height: 1.5;
+}
+/* seccion de experiencia */
+
+.seccion {
+    padding: 60px 10%;
+    background-color: var(--background-oscuro);
+}
+
+.titulo-seccion {
+    color: var(--blanco);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--azul-primario);
+    padding-left: 10px;
+}
+
+
+.contenedor-experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-experiencia {
+    background-color: var(--navbar);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cargo {
+    color: var(--azul-primario);
+}
+
+.empresa {
+    color: var(--azul-secuendario);
+    font-size: 0.9rem;
+}
+
+.descripcion {
+    color: var(--parrafo);
+}
+
+/* PROYECTOS */
+.contenedor-proyectos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-proyecto {
+    background-color: var(--navbar);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.tarjeta-proyecto h3 {
+    color: var(--blanco);
+}
+
+.tarjeta-proyecto p {
+    color: var(--parrafo);
+}
+
+.boton-proyecto {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--rosado-btn-cv);
+    color: var(--blanco);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* HABILIDADES */
+.contenedor-habilidades {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.grupo-habilidades h3 {
+    color: var(--azul-primario);
+}
+
+.grupo-habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+.grupo-habilidades li {
+    color: var(--parrafo);
+}
+
+/* SOBRE MI */
+.texto-sobre-mi {
+    color: var(--parrafo);
+    max-width: 600px;
+    line-height: 1.6;
 }
