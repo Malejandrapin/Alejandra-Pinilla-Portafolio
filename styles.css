@@ -6,6 +6,7 @@
     --blanco: #ffffff;
     --parrafo: #cbd5e1;
     --azul-secuendario: #21ADE4;
+    --transition: all 0.3s ease;
 }
 
 * {
@@ -17,19 +18,18 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--background-oscuro);
-    color: var(--blanco)
+    color: var(--blanco); 
+    line-height: 1.6;
 }
-
 /* Estilos para el Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 50px;
+    padding: 0 5%;
     background-color: var(--navbar);
+  height: 80px;
     position: fixed;
-    /* No se mueve al hacer scroll */
-    top: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -53,18 +53,17 @@ body {
 .links-nav {
     display: flex;
     list-style: none;
-    gap: 35px;
-    /* define el tamaño del espacio entre filas y entre columnas */
+    gap: 32px; /* gap define el tamaño del espacio entre filas y entre columnas */
 }
 
 .links-nav a {
     text-decoration: none;
     color: var(--blanco);
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     /* Controla el espacio entre cada letra en un element dado o bloque de texto */
+    transition: var(--transition);
 }
 
 .links-nav a:hover {
@@ -90,23 +89,22 @@ body {
 
 /* seccion de inicio  */
 .inicio-presentacion {
-    min-height: 120vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 120px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding:  100px 5%;
     border-bottom: 0.1px solid var(--azul-primario);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
 .contenedor-foto {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 20px;
+ display: flex;
+    align-items: center;
+    gap: 64px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .imagen-perfil {
@@ -116,27 +114,18 @@ body {
 }
 
 .circulo-brillo {
-    position: relative;
-    width: 280px;
-    height: 280px;
-    border: 2.5px solid var(--azul-primario);
-    box-shadow: 0 0 40px var(--azul-primario);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 300px;
+    height: 300px;
+    border: 3px solid var(--azul-primario);
+    border-radius: 20px; /* Cuadrado redondeado como en tu imagen */
+    box-shadow: 0 0 30px rgba(111, 177, 228, 0.4);
     overflow: hidden;
-    flex-shrink: 0;
 }
 
 .circulo-brillo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.contenedor-contenido {
-    display: flex;
-    flex-direction: column;
 }
 
 .contenedor-contenido h3 {
@@ -146,7 +135,7 @@ body {
 
 .contenedor-contenido .nombreAle {
     font-family: 'Oswald', sans-serif;
-    font-size: 55px;
+     font-size: clamp(2.5rem, 5vw, 4rem);
     margin: 5px 0;
 }
 
@@ -231,25 +220,27 @@ body {
     color: var(--background-oscuro);
     background-color: var(--azul-primario);
 }
+
 /* seccion de educacion  */
 .seccion-educacion {
-    padding: 80px 5%;
+    padding: 30px 5%;
     background-color: var(--background-oscuro);
-      border-bottom: 0.1px solid var(--azul-primario);
+    border-bottom: 0.1px solid var(--azul-primario);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-.titulo-seccion{
+
+.titulo-seccion {
     color: var(--azul-secuendario);
     padding-bottom: 10px;
 }
+
 /* grid de 2 columnas */
 .grid-educacion {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    max-width: 1300px;
-    margin: 0 auto;
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
 }
 
 .tarjeta-educacion {
@@ -273,34 +264,39 @@ body {
     padding: 6px 14px;
     border-radius: 8px;
     font-size: 11px;
-    font-weight:900;
+    font-weight: 900;
     letter-spacing: 1px;
     border: 1.5px solid var(--azul-primario);
 }
-.año-educacion{
-     font-family: "Lora", serif;
-      font-size: 40px;
+
+.año-educacion {
+    font-family: "Lora", serif;
+    font-size: 40px;
     color: var(--parrafo);
     margin-bottom: -20px;
     margin-left: -5px;
     font-style: italic;
 }
-.tarjeta-educacion h3{
- font-family: 'Open Sans', sans-serif;
+
+.tarjeta-educacion h3 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color: var(--azul-primario);
     margin-bottom: 10px;
     margin: 12px 0 0 0;
 }
-.tarjeta-educacion p{
-      font-family: 'Open Sans', sans-serif;
+
+.tarjeta-educacion p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: var(--blanco);
     line-height: 1.5;
 }
+
+
 /* seccion de experiencia */
 
-.seccion {
+/* .seccion {
     padding: 60px 10%;
     background-color: var(--background-oscuro);
 }
@@ -340,7 +336,7 @@ body {
 }
 
 /* PROYECTOS */
-.contenedor-proyectos {
+/* .contenedor-proyectos {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -369,10 +365,10 @@ body {
     padding: 8px 15px;
     border-radius: 5px;
     text-decoration: none;
-}
+} */
 
 /* HABILIDADES */
-.contenedor-habilidades {
+/* .contenedor-habilidades {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -392,8 +388,8 @@ body {
 }
 
 /* SOBRE MI */
-.texto-sobre-mi {
+/* .texto-sobre-mi {
     color: var(--parrafo);
     max-width: 600px;
     line-height: 1.6;
-}
+}   */
