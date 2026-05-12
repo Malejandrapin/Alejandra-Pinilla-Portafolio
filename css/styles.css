@@ -1,6 +1,7 @@
 @import url("./navbar.css");
 @import url("./home.css");
 @import url("./education.css");
+@import url("./experience.css");
 
 
 
@@ -28,4 +29,19 @@ body {
     color: var(--blanco);
     line-height: 1.6;
 }
+section {
+    padding: 30px 5%;
+    background-color: var(--background-oscuro);
+    border-bottom: 0.1px solid var(--azul-primario);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.titulo-seccion {
+    color: var(--azul-secuendario);
+    padding: 10px;
+    border-left: 3px solid var(--azul-primario);
+    
+}
+
 

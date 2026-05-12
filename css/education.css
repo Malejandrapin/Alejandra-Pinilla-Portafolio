@@ -1,16 +1,4 @@
 /* seccion de educacion  */
-.seccion-educacion, .seccion-experiencia {
-    padding: 30px 5%;
-    background-color: var(--background-oscuro);
-    border-bottom: 0.1px solid var(--azul-primario);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.titulo-seccion {
-    color: var(--azul-secuendario);
-    padding-bottom: 10px;
-}
 
 .grid-educacion {
     display: grid;

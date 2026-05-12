@@ -1,0 +1,99 @@
+.contenedor-experiencia {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Línea de tiempo  */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px dotted var(--azul-primario); /* Línea punteada a la izquierda */
+    margin-left: 20px;
+}
+
+.item-experiencia {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Coloco punto decorativo en timeline */
+.punto-timeline {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--blanco);
+    border: 3px solid var(--azul-secuendario);
+    border-radius: 50%;
+    left: -38.5px; /* lo ajusto para que me quede sobre la  linea */
+    top: 20px;
+    box-shadow: 0 0 10px var(--azul-secuendario);
+}
+
+/* Tarjeta con el contenido relacionado a la experiencia */
+.tarjeta-experiencia {
+    background: linear-gradient(145deg, #2b4463, #1d2f44);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(111, 177, 228, 0.2);
+    transition: 0.3s ease;
+}
+
+.tarjeta-experiencia:hover {
+    border-color: var(--azul-primario);
+    box-shadow: 0 0 20px rgba(111, 177, 228, 0.1);
+}
+
+.encabezado-exp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.rol-empresa h3 {
+    color: var(--blanco);
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nombre-empresa {
+    color: var(--azul-primario);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.fecha-exp {
+    color: var(--parrafo);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.descripcion-exp {
+    color: var(--parrafo);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* Contenedor de iconos de tecnologías */
+.tecnologias-exp {
+    display: flex;
+    gap: 15px;
+    background: var(--background-oscuro);
+    padding: 10px 15px;
+    border-radius: 12px;
+    width: fit-content;
+  
+}
+
+.tecnologias-exp img {
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
+}
+
+.tecnologias-exp img:hover {
+    transform: scale(1.2);
+}
