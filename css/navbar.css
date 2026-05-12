@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: var(--navbar);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Se ajusta la imagen que coloque como logo  */
+#logoAlejandra {
+    height: 80px;
+    width: auto;
+}
+
+#logoAlejandra:hover {
+    transform: scale(1.25);
+    /* Efecto visual al pasar el mouse */
+}
+
+.links-nav {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    /* gap define el tamaño del espacio entre filas y entre columnas */
+}
+
+.links-nav a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* Controla el espacio entre cada letra en un element dado o bloque de texto */
+    transition: var(--transition);
+}
+
+.links-nav a:hover {
+    color: var(--rosado-btn-cv);
+}
+
+/* Estilo para el boton de cv */
+#btn-cv {
+    background-color: var(--rosado-btn-cv);
+    color: var(--blanco);
+    cursor: pointer;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+#btn-cv:hover {
+    color: var(--rosado-btn-cv);
+    background-color: var(--parrafo);
+}
+

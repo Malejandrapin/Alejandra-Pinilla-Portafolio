@@ -1,0 +1,73 @@
+/* seccion de educacion  */
+.seccion-educacion, .seccion-experiencia {
+    padding: 30px 5%;
+    background-color: var(--background-oscuro);
+    border-bottom: 0.1px solid var(--azul-primario);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.titulo-seccion {
+    color: var(--azul-secuendario);
+    padding-bottom: 10px;
+}
+
+.grid-educacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    padding: 32px 0;
+}
+
+.tarjeta-educacion {
+    background-color: var(--background-oscuro);
+    border: 1px solid var(--azul-primario);
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    gap: 10px;
+    transition: var(--transition);
+}
+
+.tarjeta-educacion:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tag-educacion {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: transparent;
+    color: var(--azul-secuendario);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 1.5px solid var(--azul-primario);
+}
+
+.año-educacion {
+    font-family: "Lora", serif;
+    font-size: 40px;
+    color: var(--parrafo);
+    margin-bottom: -20px;
+    margin-left: -5px;
+    font-style: italic;
+}
+
+.tarjeta-educacion h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: var(--azul-primario);
+    margin-bottom: 10px;
+    margin: 12px 0 0 0;
+}
+
+.tarjeta-educacion p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--blanco);
+    line-height: 1.5;
+}

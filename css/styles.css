@@ -1,0 +1,31 @@
+@import url("./navbar.css");
+@import url("./home.css");
+@import url("./education.css");
+
+
+
+
+:root {
+    --background-oscuro: #1d2f44;
+    --navbar: #395b85;
+    --azul-primario: #6fb1e4;
+    --rosado-btn-cv: #bc2a6a;
+    --blanco: #ffffff;
+    --parrafo: #cbd5e1;
+    --azul-secuendario: #21ADE4;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-oscuro);
+    color: var(--blanco);
+    line-height: 1.6;
+}
+

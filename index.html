@@ -5,187 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandra Pinilla | Ingeniera de Sistemas | Desarrolladora Full Stack</title>
-    <link rel="stylesheet" href="styles.css">
+      <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <link rel="stylesheet" href="./css/styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-  
+
     <!-- libreria para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo"> <img id="logoAlejandra" src="./imagenes/logo.png" alt="logoAlejandra"></div>
-        <ul class="links-nav">
-            <li><a href="#home">INICIO </a> </li>
-            <li><a href="#secEducacion">EDUCACIÓN </a> </li>
-            <li><a href="#experience">EXPERIENCIA </a> </li>
-            <li><a href="#proyectos">PROYECTOS </a> </li>
-            <li><a href="#habilities">HABILIDADES </a> </li>
-            <li><a href="#aboutme">SOBRE MI </a> </li>
-        </ul>
-        <a href="https://docs.google.com/document/d/1S3eBQ8lxWR2n9FZMZTGcfGruLGpG9yRG/edit?usp=sharing&ouid=115756097572550204621&rtpof=true&sd=true"
-            target="_blank">
-            <button id="btn-cv">Descargar CV <i class="fa-solid fa-download"></i> </button>
-        </a>
-    </nav>
-    <main>
-        <!-- seccion de inicio -->
-        <section id="home" class="inicio-presentacion">
-            <div class="contenedor-foto">
-                <div class="imagen-perfil">
-                    <div class="circulo-brillo">
-                        <img id="perfilAle" src="./imagenes/PerfilAle.png" alt="Alejandra Pinilla">
-                    </div>
-                </div>
+    <!-- barra de navegacion  -->
+ <div id="navbar"></div>
+<main>
+    <!-- seccion de inicio -->
+    <div id="home"></div>
+    <!-- seccion de educacion -->
+    <div id="educacion"></div>
+</main>
 
-                <div class="contenedor-contenido">
-                    <h3>Hola, soy</h3>
-                    <h1 class="nombreAle">Alejandra <span>Pinilla</span></h1>
-                    <h2 class="rolAle"> Full Stack Developer </h2>
-                    <p id="descripcion">Ingeniera de Sistemas y desarrolladora apasionada por crear experiencias
-                        digitales
-                        únicas, combinando diseño, tecnología y propósito. </p>
-                    <div class="iconos-redes">
-                        <a href="https://www.linkedin.com/in/maira-alejandra-pinilla-pinilla-ingenieria-de-sistemas-desarrolladora/"
-                            target="_blank"><i class="fa-brands fa-linkedin" style="color: #21ade4;"></i></a>
-                        <a href="https://github.com/Malejandrapin" target="_blank"><i class="fa-brands fa-github"
-                                style="color: #21ade4;"></i></a>
-                    </div>
-                    <div class="botones-contenido">
-                        <button class="btn-verProyectos">Ver proyectos</button>
-                        <a class="email" href="mailto:dismajus@gmail.com">Contáctame</a>
-
-                    </div>
-
-                </div>
-        </section>
-        <!-- seccion de formacion -->
-        <section id="secEducacion" class="seccion-educacion">
-            <h2 class="titulo-seccion"> FORMACIÓN ACADÉMICA</h2>
-            <div class="grid-educacion">
-                <div class="tarjeta-educacion">
-                    <span class="tag-educacion"> CERTIFICACIÓN</span>
-                    <span class="año-educacion">2026</span>
-                    <h3>Desarrollador Junior Full-Stack/Java</h3>
-                    <p>Generation Colombia</p>
-                </div>
-
-                <div class="tarjeta-educacion">
-                    <span class="tag-educacion"> PREGRADO</span>
-                    <span class="año-educacion">2024</span>
-                    <h3>Ingeniería de sistemas</h3>
-                    <p>Universidad Nacional Abierta y a Distancia UNAD</p>
-                </div>
-
-                <div class="tarjeta-educacion">
-                    <span class="tag-educacion"> DIPLOMADO</span>
-                    <span class="año-educacion">2023</span>
-                    <h3>Diplomado de profundización en Administración de Sistemas Operativos Open Source (Opción de
-                        grado) </h3>
-                    <p>Universidad Nacional Abierta y a Distancia UNAD</p>
-                </div>
-
-                <div class="tarjeta-educacion">
-                    <span class="tag-educacion"> TECNOLOGIA</span>
-                    <span class="año-educacion">2022</span>
-                    <h3>Análisis y Desarrollo de Sistemas de Información - ADSI</h3>
-                    <p>Servicio Nacional de Aprendizaje (SENA)</p>
-                </div>
-
-            </div>
-
-        </section>
-        <!-- seccion experiencia -->
-
-        <!-- <section class="experiencia seccion" id="experiencia">
-    <h2 class="titulo-seccion">Experiencia</h2>
-
-    <div class="contenedor-experiencia">
-        <div class="item-experiencia">
-            <h3 class="cargo">Monitora Académica (Bootcamp De Talento Tech Mintic)</h3>
-            <span class="empresa">Tecnalia Colombia | 2024</span>
-            <p class="descripcion">
-               Incrementé la participación estudiantil en un 30%, mediante soporte técnico oportuno, seguimiento personalizado y comunicación efectiva entre docentes, mentores y alumnos.
-            </p>
-        </div>
-
-        <div class="item-experiencia">
-            <h3 class="cargo">Practicante Universitaria - Analista de desarrollo de tecnología</h3>
-            <span class="empresa">Seguros Sura Colombia | 2023 - 2024</span>
-            <p class="descripcion">
-             Reduje en un 60% el ingreso de incidencias en cotizaciones de viajes mediante análisis de causa raíz y documentación de mejoras funcionales y técnicas.
-
-            </p>
-        </div>
-    </div>
-</section> -->
-
-        <!-- PROYECTOS -->
-        <!-- <section class="proyectos seccion" id="proyectos">
-    <h2 class="titulo-seccion">Proyectos</h2>
-
-    <div class="contenedor-proyectos">
-        <div class="tarjeta-proyecto">
-            <h3>Portafolio Web</h3>
-            <p>Diseño y desarrollo de portafolio personal .</p>
-            <a href="https://malejandrapin.github.io/Alejandra-Pinilla-Portafolio/" class="boton-proyecto">Ver proyecto</a>
-        </div>
-
-        <div class="tarjeta-proyecto">
-            <h3>To Do List</h3>
-            <p>Aplicación de gestión de tareas donde el usuario puede agregar tareas con texto y categoria</p>
-            <a href="https://malejandrapin.github.io/task-manager-Maira-Pinilla/" class="boton-proyecto">Ver proyecto</a>
-        </div>
-    </div>
-</section> -->
-
-        <!-- HABILIDADES -->
-        <!-- <section class="habilidades seccion" id="habilidades">
-    <h2 class="titulo-seccion">Habilidades</h2>
-
-    <div class="contenedor-habilidades">
-        <div class="grupo-habilidades">
-            <h3>Frontend</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-
-        <div class="grupo-habilidades">
-            <h3>Herramientas</h3>
-            <ul>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>VS Code</li>
-            </ul>
-        </div>
-
-        <div class="grupo-habilidades">
-            <h3>Habilidades Blandas</h3>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación</li>
-                <li>Resolución de problemas</li>
-            </ul>
-        </div>
-    </div>
-</section> -->
-
-        <!-- SOBRE MI -->
-        <!-- <section class="sobre-mi seccion" id="sobre-mi">
-    <h2 class="titulo-seccion">Sobre mí</h2>
-
-    <p class="texto-sobre-mi">
-        Soy desarrolladora en formación apasionada por el desarrollo web.
-        Me gusta crear interfaces modernas, funcionales y centradas en el usuario.
-        Estoy en constante aprendizaje y busco crecer profesionalmente en el área tecnológica.
-    </p>
-</section> -->
-    </main>
+   
+   <script type="module" src="/js/main.js"></script>
 </body>
+
 
 </html>
