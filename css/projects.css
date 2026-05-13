@@ -1,0 +1,123 @@
+.contenedor-proyectos {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    padding: 32px 0;
+}
+
+.tarjeta-proyecto {
+    background: linear-gradient(145deg, #2b4463, #1d2f44);
+    border-radius: 15px;
+    overflow: hidden;
+ border: 2.5px solid rgba(111, 177, 228, 0.2);
+     transition: transform 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-10px);
+    border-color: var(--azul-primario);
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: 180px;
+    background-color: var(--navbar);
+    overflow:hidden;
+}
+
+.imagen-proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.info-proyecto {
+    padding: 25px;
+}
+
+.info-proyecto h3 {
+    color: var(--blanco);
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.info-proyecto p {
+    color: var(--parrafo);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas de tecnologías */
+.tags-proyecto {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.tags-proyecto span {
+    background-color: #1e293b;
+    color: var(--azul-primario);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    border: 1px solid rgba(111, 177, 228, 0.2);
+}
+
+/* Botones de la tarjeta */
+.botones-proyecto {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-code,
+.btn-demo {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-code {
+    background-color: #334155;
+    color: var(--blanco);
+}
+
+.btn-demo {
+    background-color: var(--azul-secuendario);
+    color: var(--background-oscuro);
+}
+
+.btn-code:hover {
+    background-color: var(--parrafo);
+    color: var(--background-oscuro);
+}
+
+.btn-demo:hover {
+    background-color: var(--azul-primario);
+}
+
+/* Ajuste para tablets y móviles */
+@media (max-width: 992px) {
+    .grid-proyectos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-proyectos {
+        grid-template-columns: 1fr;
+    }
+}

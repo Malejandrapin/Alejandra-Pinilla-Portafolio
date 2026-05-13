@@ -4,5 +4,6 @@ loadComponent("navbar", "./componentes/navbar.html");
 loadComponent("home", "./componentes/home.html");
 loadComponent("education", "./componentes/education.html");
 loadComponent("experiencie", "./componentes/experience.html");
+loadComponent("projects", "./componentes/projects.html");
 
 

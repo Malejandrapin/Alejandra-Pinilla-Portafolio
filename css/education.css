@@ -1,5 +1,3 @@
-/* seccion de educacion  */
-
 .grid-educacion {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -8,7 +6,7 @@
 }
 
 .tarjeta-educacion {
-    background-color: var(--background-oscuro);
+    background: linear-gradient(145deg, #2b4463, #1d2f44);
     border: 1px solid var(--azul-primario);
     padding: 40px;
     border-radius: 20px;
@@ -19,7 +17,6 @@
 
 .tarjeta-educacion:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.05);
 }
 
 .tag-educacion {
