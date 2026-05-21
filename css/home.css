@@ -10,19 +10,41 @@
     border-bottom-right-radius: 15px;
 }
 
+.inicio-presentacion::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(33, 173, 228, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.inicio-presentacion::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle, rgba(111, 177, 228, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
 .contenedor-foto {
     display: flex;
     align-items: center;
     gap: 64px;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .imagen-perfil {
-    
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+    flex-shrink: 0;
+    position: relative;
 }
 
 .circulo-brillo {
@@ -39,6 +61,23 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.badge-role {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--navbar);
+    border: 1px solid rgba(33, 173, 228, 0.4);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    backdrop-filter: blur(4px);
 }
 
 .contenedor-contenido h3 {
@@ -132,4 +171,47 @@
 .email:hover {
     color: var(--background-oscuro);
     background-color: var(--azul-primario);
+}
+
+@media (max-width: 768px) {
+    .contenedor-foto {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+
+    .rolAle {
+        justify-content: center;
+    }
+
+    .rolAle::before {
+        display: none;
+    }
+
+    #descripcion {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .iconos-redes {
+        justify-content: center;
+    }
+
+    .botones-contenido {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .botones-contenido {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-verProyectos,
+    .email {
+        text-align: center;
+        justify-content: center;
+    }
 }

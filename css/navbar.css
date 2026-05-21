@@ -17,7 +17,7 @@
 
 /* Se ajusta la imagen que coloque como logo  */
 #logoAlejandra {
-    height: 80px;
+    height: 120px;
     width: auto;
 }
 
@@ -61,6 +61,6 @@
 
 #btn-cv:hover {
     color: var(--rosado-btn-cv);
-    background-color: var(--parrafo);
+    background-color: var(--blanco);
 }
 
